@@ -6,7 +6,7 @@ import os
 # create class
 class MyKeywordApp():
     def __init__(self):
-        # self.keyword = input('Enter Keyword:  ')
+
         self.newWindow()
 
     def newWindow(self):
