@@ -1,6 +1,6 @@
 from pytrends.request import TrendReq
 import pandas as pd
-from tkinter import *
+from tkinter import Tk, PhotoImage, Label, Canvas, Entry, Button
 import os
 
 # create class
@@ -40,7 +40,7 @@ class MyKeywordApp():
             df = df.drop(columns='mid')
 
             # create excel writer object
-            writer = pd.ExcelWriter('keywords.xlsx')
+            writer = pd.ExcelWriter('keywords.xlsx') # pylint: disable=abstract-class-instantiated
             df.to_excel(writer)
             writer.save()
 
